@@ -1,10 +1,12 @@
-import {useNavigation} from '@react-navigation/native';
+import {StackActions, useNavigation} from '@react-navigation/native';
 import {useEffect, useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Pressable, StyleSheet, Text, View} from 'react-native';
 
 function StartScreen() {
-  const [fontSize, setFontSize] = useState(0);
   const navigation = useNavigation();
+  const resetAction = StackActions.push('playScreen');
+
+  const [fontSize, setFontSize] = useState(0);
   useEffect(() => {
     const timer = setInterval(() => {
       setFontSize(prevFontSize => {
@@ -20,11 +22,11 @@ function StartScreen() {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity
+      <Pressable
         style={styles.button}
-        onPress={() => navigation.navigate('playScreen' as never)}>
+        onPress={() => navigation.dispatch(resetAction)}>
         <Text style={{...styles.text, fontSize: fontSize}}>Let's Play</Text>
-      </TouchableOpacity>
+      </Pressable>
     </View>
   );
 }
@@ -38,7 +40,7 @@ const styles = StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    backgroundColor: '#DDDDDD',
+    //backgroundColor: '#DDDDDD',
     padding: 10,
   },
   text: {
