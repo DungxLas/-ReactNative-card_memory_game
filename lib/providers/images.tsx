@@ -7,104 +7,104 @@ export interface ImageItem {
   source: ImageSourcePropType;
 }
 
-// export const images: ImageItem[] = [
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
-//   },
-//   {
-//     id: uuidv4(),
-//     source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
-//   },
-// ];
-
 export const images: ImageItem[] = [
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
   },
   {
     id: uuidv4(),
-    source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
+    source: require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
   },
 ];
+
+// export const images: ImageItem[] = [
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/bird.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/cat.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/dog.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/lizard.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/mouse.png'),
+//   },
+//   {
+//     id: uuidv4(),
+//     source: require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/rabbit.png'),
+//   },
+// ];

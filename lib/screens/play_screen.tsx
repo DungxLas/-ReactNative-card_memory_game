@@ -1,8 +1,10 @@
 import {useEffect, useState} from 'react';
-import {Dimensions, FlatList, Image, View} from 'react-native';
+import {Alert, Dimensions, FlatList, Image, View} from 'react-native';
 import FlipCard from 'react-native-flip-card';
-import {ImageItem, images} from '../providers/images';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import {StackActions, useNavigation} from '@react-navigation/native';
+
+import {ImageItem, images} from '../providers/images';
 import Timer from '../components/timer';
 
 const data = images.sort(() => Math.random() - 0.5);
@@ -10,6 +12,9 @@ const data = images.sort(() => Math.random() - 0.5);
 const size = Dimensions.get('window').width / 3;
 
 const PlayScreen = () => {
+  const navigation = useNavigation();
+  const resetAction = StackActions.replace('startScreen');
+
   const [flippedCards, setFlippedCards] = useState<ImageItem[]>([]);
   const [matchedCards, setMatchedCards] = useState<ImageItem[]>([]);
 
@@ -53,6 +58,21 @@ const PlayScreen = () => {
     }
   }, [flippedCards]);
 
+  useEffect(() => {
+    if (matchedCards.length === data.length) {
+      Alert.alert(
+        'Congratulation!!!',
+        'You have completed the challenge. If you want to play again, click "Restart"',
+        [
+          {
+            text: 'Ok',
+            onPress: () => navigation.dispatch(resetAction),
+          },
+        ],
+      );
+    }
+  }, [matchedCards]);
+
   return (
     <View>
       <Timer />
@@ -75,8 +95,8 @@ const PlayScreen = () => {
                 />
                 {/* Back Side */}
                 <Image
-                  //source={require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/question_mark.png')}
-                  source={require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/question_mark.png')}
+                  source={require('W:/Code/ReactNative/-ReactNative-card_memory_game/lib/image/question_mark.png')}
+                  //source={require('/Users/phamhungdung/CoDe/ReactNative/-ReactNative-card_memory_game/lib/image/question_mark.png')}
                   style={{width: size, height: size}}
                 />
               </FlipCard>

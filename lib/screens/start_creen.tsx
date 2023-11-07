@@ -4,7 +4,7 @@ import {Pressable, StyleSheet, Text, View} from 'react-native';
 
 function StartScreen() {
   const navigation = useNavigation();
-  const resetAction = StackActions.push('playScreen');
+  const resetAction = StackActions.replace('playScreen');
 
   const [fontSize, setFontSize] = useState(0);
   useEffect(() => {
